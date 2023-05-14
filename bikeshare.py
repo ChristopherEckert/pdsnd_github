@@ -29,27 +29,27 @@ def get_filters():
         if city in Cities:
             break
         else:
-            print('Invalid input. Please make a valid entry.')
+            print('I am sorry, that is not a valid input for which we have data. Please make a valid entry.')
 
     # get user input for month (all, january, february, ... , june)
     while True:
-        month = input('What month would you like data for? (January, February, March, April, May, June, or ALL) \n> ')
+        month = input('Which month would you like data for? (January, February, March, April, May, June, or ALL) \n> ')
         month = month.lower()
         if month in Months:
             break
         else:
-            print('Invalid input. Please make a valid entry.')
+            print('I am sorry, that is not a valid input for which we have data. Please make a valid entry.')
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        day = input('What weekday would you like data for? (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or ALL) \n> ')
+        day = input('What day of the week would you like data for? (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or ALL) \n> ')
         day = day.lower()
         if day in Days:
             break
         else:
-            print('Invalid input. Please make a valid entry.')
+            print('I am sorry, that is not a valid input for which we have data. Please make a valid entry.')
 
-    print('\nYou chose: ', city, ',', month, ',', day)
+    print('\nYou chose:  City - ', city, ', Month - ', month, ', Day - ', day)
 
 
     print('-'*40)
@@ -215,7 +215,7 @@ def display_raw_data(df):
     """
     Displays raw data var_step rows at a time until the user chooses to stop, or end of file is reached.
     """
-    var_step = 5
+    var_step = 10
     start_time = time.time()
 #    df = pd.read_csv(CITY_DATA[city])
     print('\nRaw data will be displayed {} lines at a time.\n'.format(var_step))
