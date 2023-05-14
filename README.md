@@ -21,14 +21,21 @@ new_york_city.csv
 list of sources used (aside from Udacity content):
 
 Docs.Python.org
+
 Pandas.Pydata.org
 
 https://learnpython.com/blog/python-match-case-statement/
+
 https://stackoverflow.com/questions/663171/how-do-i-get-a-substring-of-a-string-in-python
+
 https://stackoverflow.com/questions/35401019/how-do-i-print-something-underlined-in-python
+
 https://stackoverflow.com/questions/2389846/python-decimals-format
+
 https://stackoverflow.com/questions/39801441/can-i-use-a-variable-inside-of-an-input-statement
 
 I used these as a guide when I got stuck and to verify my answers.
+
 https://github.com/TharwatElsyed/Explore_US_bikeshare_data/blob/main/bikeshare_2.py
+
 https://github.com/BelalMA/Udacity-BikeShare-Project/blob/main/US_bikeshare.py
