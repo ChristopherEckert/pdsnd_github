@@ -11,6 +11,7 @@ Cities = ['chicago', 'new york city', 'washington']
 Months = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
 Days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']
 
+# function to have user input selections for which they want data
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -54,7 +55,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-
+# function to load appropriate data based on user inputs from previous function
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -98,7 +99,7 @@ def load_data(city, month, day):
 
     return df
 
-
+# function to calculate time bases statistics based on data loaded from previous function
 def time_stats(df):
     """
     Displays statistics on the most common times of travel.
@@ -125,7 +126,7 @@ def time_stats(df):
     print('\nThis took %s seconds.' % f'{(time.time() - start_time):.2f}')
     print('-'*40)
 
-
+# function to determine station statistics 
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -151,7 +152,7 @@ def station_stats(df):
     print('\nThis took %s seconds.' % f'{(time.time() - start_time):.2f}')
     print('-'*40)
 
-
+# function to calculate travel time statistics
 def trip_duration_stats(df):
     """
     Displays statistics on the total and average trip duration.
@@ -171,7 +172,7 @@ def trip_duration_stats(df):
     print('\nThis took %s seconds.' % f'{(time.time() - start_time):.2f}')
     print('-'*40)
 
-
+# function to calculate population metrics
 def user_stats(df):
     """
     Displays statistics on bikeshare users.
@@ -208,7 +209,7 @@ def user_stats(df):
     print('\nThis took %s seconds.' % f'{(time.time() - start_time):.2f}')
     print('-'*40)
 
-
+# function to display the raw data
 def display_raw_data(df):
 
     """
@@ -242,6 +243,7 @@ def display_raw_data(df):
     print('\nYou spent %s seconds reviewing this data.' % f'{(time.time() - start_time):.2f}')
     print('-'*40)
 
+# main function
 def main():
     restart_flag = True
     while restart_flag:
