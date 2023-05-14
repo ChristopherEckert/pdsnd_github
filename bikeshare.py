@@ -28,27 +28,27 @@ def get_filters():
         if city in Cities:
             break
         else:
-            print('Invalid input. Please make a valid entry.')
+            print('I am sorry, that is not a valid input for which we have data. Please make a valid entry.')
 
     # get user input for month (all, january, february, ... , june)
     while True:
-        month = input('What month would you like data for? (January, February, March, April, May, June, or ALL) \n> ')
+        month = input('Which month would you like data for? (January, February, March, April, May, June, or ALL) \n> ')
         month = month.lower()
         if month in Months:
             break
         else:
-            print('Invalid input. Please make a valid entry.')
+            print('I am sorry, that is not a valid input for which we have data. Please make a valid entry.')
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        day = input('What weekday would you like data for? (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or ALL) \n> ')
+        day = input('What day of the week would you like data for? (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or ALL) \n> ')
         day = day.lower()
         if day in Days:
             break
         else:
-            print('Invalid input. Please make a valid entry.')
+            print('I am sorry, that is not a valid input for which we have data. Please make a valid entry.')
 
-    print('\nYou chose: ', city, ',', month, ',', day)
+    print('\nYou chose:  City - ', city, ', Month - ', month, ', Day - ', day)
 
 
     print('-'*40)
