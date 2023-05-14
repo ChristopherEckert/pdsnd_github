@@ -214,7 +214,7 @@ def display_raw_data(df):
     """
     Displays raw data var_step rows at a time until the user chooses to stop, or end of file is reached.
     """
-    var_step = 5
+    var_step = 10
     start_time = time.time()
 #    df = pd.read_csv(CITY_DATA[city])
     print('\nRaw data will be displayed {} lines at a time.\n'.format(var_step))
